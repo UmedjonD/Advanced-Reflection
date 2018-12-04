@@ -1,5 +1,19 @@
 public class Entity {
-    public static void main(String[] args) {
-        System.out.println("ghbtn");
+
+//    private static final int i = 0;
+//    private String s;
+    private int m;
+
+    public Entity(){
     }
+
+    public Entity(String s, int m){
+        this.m = m;
+        //this.s = s;
+    }
+    public synchronized  String someMethod(Boolean s, int i){
+        System.out.println("this is " + s + " and " + i);
+        return someMethod(s, i);
+    }
+
 }
